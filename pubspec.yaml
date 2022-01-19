@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_dotenv: ^5.0.2
   flutter_spinkit: ^5.1.0
   google_fonts: ^2.2.0
   http: ^0.13.4
@@ -38,9 +39,14 @@ dependencies:
   weather_icons: ^3.0.0
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
   flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -53,17 +59,24 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/night.jpeg
     - assets/images/few_cloud.png
+    - assets/images/few_cloud_night-removebg-preview.png
     - assets/images/clear_Sky_day.png
     - assets/images/scattered_cloud.png
-    - assets/images/broken_cloud.png
     - assets/images/shower_rain.png
     - assets/images/rain.png
     - assets/images/thunderstorm.png
     - assets/images/snow.png
     - assets/images/mist.png
-    - assets/images/clear_sky_nigt.png
+    - assets/images/app_icon.png
+    - assets/images/clear_sky_night-removebg-preview.png
+    - assets/images/broken_cloud_night-removebg-preview.png
+    - assets/images/broken_cloud_day-removebg-preview.png
+    - assets/images/shower_rain_night-removebg-preview.png
+    - assets/images/scattered_cloud_day-removebg-preview.png
+    - assets/images/scattered_cloud_night-removebg-preview.png
+    - assets/images/overcast_cloud-removebg-preview.png
+    - .env
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

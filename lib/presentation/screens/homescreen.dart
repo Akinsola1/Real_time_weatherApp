@@ -41,13 +41,13 @@ class _HomeScreenState extends State<HomeScreen> {
     var size = MediaQuery.of(context).size;
     return loading
         ? const Scaffold(
-          backgroundColor: Colors.blueGrey,
+            backgroundColor: Colors.blueGrey,
             body: Center(
-            child: SpinKitFadingCircle(
-              color: Colors.blue,
-              size: 50.0,
-            ),
-          ))
+              child: SpinKitFadingCircle(
+                color: Colors.blue,
+                size: 50.0,
+              ),
+            ))
         : Scaffold(
             backgroundColor: Day_Night ? Colors.grey.shade800 : Colors.grey,
             body: SingleChildScrollView(
@@ -76,7 +76,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: GoogleFonts.abel(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 30,
-                                      color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                      color: Day_Night
+                                          ? Colors.grey.shade300
+                                          : Colors.black,
                                     )),
                                 const Spacer(),
                                 IconButton(
@@ -95,15 +97,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                   '${_response.cityName}, ',
                                   style: GoogleFonts.abel(
                                       fontWeight: FontWeight.w400,
-                                      color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                      color: Day_Night
+                                          ? Colors.grey.shade300
+                                          : Colors.black,
                                       fontSize: 25),
                                 ),
-                                
                                 Text(
                                   _response.countrySys.country,
                                   style: GoogleFonts.abel(
                                     fontSize: 25,
-                                    color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                    color: Day_Night
+                                        ? Colors.grey.shade300
+                                        : Colors.black,
                                     fontWeight: FontWeight.w400,
                                   ),
                                 )
@@ -125,8 +130,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Text(_response.weatherInfo.description,
                                 style: GoogleFonts.abel(
-                                  color: Day_Night ? Colors.grey.shade300: Colors.black,
-                                    fontSize: 23, fontWeight: FontWeight.w500)),
+                                    color: Day_Night
+                                        ? Colors.grey.shade300
+                                        : Colors.black,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.w500)),
                             const SizedBox(
                               height: 10,
                             ),
@@ -136,7 +144,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Icon(
                                     WeatherIcons.raindrop,
-                                    color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                    color: Day_Night
+                                        ? Colors.grey.shade300
+                                        : Colors.black,
                                     size: 20,
                                   ),
                                   const SizedBox(width: 5),
@@ -144,7 +154,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     '${_response.tempInfo.humidity}%',
                                     style: GoogleFonts.abel(
                                         fontSize: 23,
-                                        color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                        color: Day_Night
+                                            ? Colors.grey.shade300
+                                            : Colors.black,
                                         fontWeight: FontWeight.w500),
                                   ),
                                 ],
@@ -170,14 +182,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               height: size.height * 0.3,
                               width: size.width * 0.91,
                               decoration: BoxDecoration(
-                                  color: Day_Night ? Colors.grey.shade600: Colors.blueGrey,
+                                  color: Day_Night
+                                      ? Colors.grey.shade600
+                                      : Colors.blueGrey,
                                   borderRadius: BorderRadius.circular(10)),
                               child: loading
                                   ? Container(
                                       height: size.height * 0.3,
                                       width: size.width * 0.91,
                                       decoration: BoxDecoration(
-                                          color: Day_Night ? Colors.grey.shade600: Colors.white,
+                                          color: Day_Night
+                                              ? Colors.grey.shade600
+                                              : Colors.white,
                                           borderRadius:
                                               BorderRadius.circular(10)),
                                       child: const Center(
@@ -195,7 +211,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                             'Details',
                                             style: GoogleFonts.abel(
                                               fontSize: 20,
-                                              color: Day_Night ? Colors.grey.shade300: Colors.black,
+                                              color: Day_Night
+                                                  ? Colors.grey.shade300
+                                                  : Colors.black,
                                               fontWeight: FontWeight.w500,
                                             ),
                                           ),
@@ -211,7 +229,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     Text(
                                                       'Feels like',
                                                       style: GoogleFonts.abel(
-                                                        color: Day_Night ? Colors.grey.shade400: Colors.grey,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade400
+                                                            : Colors.grey,
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -221,7 +242,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       '${_response.tempInfo.feelsLike}°C',
                                                       style: GoogleFonts.abel(
                                                         fontSize: 20,
-                                                        color: Day_Night ? Colors.grey.shade500: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade500
+                                                            : Colors.black,
                                                         fontWeight:
                                                             FontWeight.w500,
                                                       ),
@@ -236,7 +260,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     Text(
                                                       'Pressure',
                                                       style: GoogleFonts.abel(
-                                                        color: Day_Night ? Colors.grey.shade400: Colors.grey,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade400
+                                                            : Colors.grey,
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -246,7 +273,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       '${_response.tempInfo.pressure}mbar',
                                                       style: GoogleFonts.abel(
                                                         fontSize: 20,
-                                                        color: Day_Night ? Colors.grey.shade500: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade500
+                                                            : Colors.black,
                                                         fontWeight:
                                                             FontWeight.w500,
                                                       ),
@@ -266,7 +296,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     Text(
                                                       'Wind speed',
                                                       style: GoogleFonts.abel(
-                                                        color: Day_Night ? Colors.grey.shade400: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade400
+                                                            : Colors.black,
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -276,7 +309,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       '${_response.wind.speed}Km/h',
                                                       style: GoogleFonts.abel(
                                                         fontSize: 20,
-                                                        color: Day_Night ? Colors.grey.shade500: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade500
+                                                            : Colors.black,
                                                         fontWeight:
                                                             FontWeight.w500,
                                                       ),
@@ -291,7 +327,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     Text(
                                                       'Humidty',
                                                       style: GoogleFonts.abel(
-                                                        color:  Day_Night ? Colors.grey.shade400: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade400
+                                                            : Colors.black,
                                                         fontSize: 20,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -301,7 +340,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                                       '${_response.tempInfo.humidity}%',
                                                       style: GoogleFonts.abel(
                                                         fontSize: 20,
-                                                        color: Day_Night ? Colors.grey.shade500: Colors.black,
+                                                        color: Day_Night
+                                                            ? Colors
+                                                                .grey.shade500
+                                                            : Colors.black,
                                                         fontWeight:
                                                             FontWeight.w500,
                                                       ),

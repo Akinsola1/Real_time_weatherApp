@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:xiomi_weather_app/presentation/screens/homescreen.dart';
 
-void main() {
+Future <void> main() async {
+  await dotenv.load();
   runApp(const MyApp());
 }
 

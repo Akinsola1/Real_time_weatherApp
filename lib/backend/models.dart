@@ -76,35 +76,35 @@ class WeatherResponse {
         return "assets/images/clear_Sky_day.png";
       // clear sky night
       case 'https://openweathermap.org/img/wn/01n@2x.png':
-        return "assets/images/clear_sky_nigt.png";
+        return "assets/images/clear_sky_night-removebg-preview.png";
       //few cloud day
       case 'https://openweathermap.org/img/wn/02d@2x.png':
         return "assets/images/few_cloud.png";
       // few cloud night
       case 'https://openweathermap.org/img/wn/02n@2x.png':
-        return "assets/images/few_cloud.png";
+        return "assets/images/few_cloud_night-removebg-preview.png";
       // scattered cloud day
       case 'https://openweathermap.org/img/wn/03d@2x.png':
-        return "assets/images/scattered_cloud.png";
+        return "assets/images/scattered_cloud_day-removebg-preview.png";
       //scattered cloud night
       case 'https://openweathermap.org/img/wn/03n@2x.png':
-        return "assets/images/scattered_cloud.png";
+        return "assets/images/scattered_cloud_night-removebg-preview.png";
       // broken cloud day
       case 'https://openweathermap.org/img/wn/04d@2x.png':
-        return "assets/images/broken_cloud.png";
+        return "assets/images/overcast_cloud-removebg-preview.png";
       // broken cloud night
       case 'https://openweathermap.org/img/wn/04n@2x.png':
-        return "assets/images/broken_cloud.png";
+        return "assets/images/overcast_cloud-removebg-preview.png";
       //shower rain day
       case 'https://openweathermap.org/img/wn/09d@2x.png':
         return "assets/images/shower_rain.png";
       //shower rain night
       case 'https://openweathermap.org/img/wn/09n@2x.png':
-        return "assets/images/shower_rain.png";
+        return "assets/images/shower_rain_night-removebg-preview.png";
       //rain day
       case 'https://openweathermap.org/img/wn/10d@2x.png':
         return "assets/images/rain.png";
-      //shower rain night
+      //rain night
       case 'https://openweathermap.org/img/wn/10n@2x.png':
         return "assets/images/rain.png";
       //thunderstorm day

@@ -55,7 +55,7 @@ class _CityWetherState extends State<CityWether> {
                 height: size.height * 0.24,
                 width: size.width * 0.33,
                 decoration: BoxDecoration(
-                  color: Day_Night ? Colors.grey.shade500 : Colors.blueGrey,
+                  color: Colors.blueGrey,
                   borderRadius: BorderRadius.circular(8),
                   boxShadow: const [
                     BoxShadow(
@@ -81,7 +81,7 @@ class _CityWetherState extends State<CityWether> {
                       ),
                       Column(
                         children: [
-                          Image.asset(_response.iconurl),
+                          Image.asset(_response.iconurl, height: 90, width: 90,),
                           Text(
                             _response.weatherInfo.description,
                             style:   GoogleFonts.abel(
